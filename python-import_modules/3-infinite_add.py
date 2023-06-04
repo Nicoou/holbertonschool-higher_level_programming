@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import argv
-    cont = 0
+    import sys
     res = 0
-    for x in argv:
-        if cont != 0:
-            res = res + int(x)
-        cont += 1
-    print("{}".format(res))    
+    argc = len(sys.argv)
+    if argc == 1:
+        print("0")
+        quit()
+    else:
+        for idx, argc in enumerate(sys.argv):
+            if idx > 0:
+                res += int(argc)
+        print("{}".format(res))
