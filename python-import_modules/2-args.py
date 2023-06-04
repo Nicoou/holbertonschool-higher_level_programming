@@ -7,7 +7,6 @@ if __name__ == "__main__":
 else:
     print("{} {}".format(len(argv) - 1,
                          "arguments:" if len(argv) > 2 else "argument:"))
-
 for x in argv:
     if cont != 0:
         print("{}: {}".format(cont, x))
