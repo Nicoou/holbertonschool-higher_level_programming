@@ -7,6 +7,7 @@ class Square:
     __size = 0
 
     def __init__(self,value, size=0):
+        """another coments for square"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if not size >= 0:
