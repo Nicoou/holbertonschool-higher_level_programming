@@ -2,6 +2,6 @@
 """another square"""
 
 
-class square:
+class Square:
     """Square"""
     pass
