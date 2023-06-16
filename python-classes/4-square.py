@@ -6,7 +6,7 @@ class Square:
     """Square"""
 
     def __init__(self, size=0):
-        """another square"""
+        """Init with size of square"""
         self._size = None
         self.size = size
 
@@ -22,7 +22,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
-            self.__size = value
+            self._size = value
 
     def area(self):
         area = self.size * self.size
