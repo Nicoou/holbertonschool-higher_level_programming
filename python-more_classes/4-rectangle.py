@@ -58,5 +58,5 @@ class Rectangle:
             words = words + ('\n' if i + 1 < self.__height else '')
         return words
 
-    def  __repr__(self):
+    def __repr__(self):
         return f"Rectangle({self.__width}, {self.height})"
