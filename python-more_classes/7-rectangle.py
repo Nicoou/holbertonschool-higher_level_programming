@@ -54,13 +54,13 @@ class Rectangle:
         print(self)
 
     def __str__(self):
-        words = ""
         if self.__height == 0 or self.__width == 0:
-            return words
-        for i in range(self.__height):
-            words = words + ('#' * self.__width)
-            words = words + ('\n' if i + 1 < self.__height else '')
-        return words
+            return ''
+
+        for i in range(self.__height - 1):
+                print(str(self.print_symbol) * self.__width)
+        print(str(self.print_symbol) * self.__width, end="")
+        return ''
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.height})"
