@@ -2,4 +2,5 @@
 """Class rectangle"""
 
 class Square:
+    """empty class rectangle"""
     pass
