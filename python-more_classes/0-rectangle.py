@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Class rectangle"""
+""" module """
 
-class Square:
-    """empty class rectangle"""
+class Rectangle:
+    """ Rectangle """
     pass
