@@ -1,7 +1,3 @@
-#!/usr/python3\\
-"""anshe"""
-
-
+#!/usr/python3
 def copy_list(a_list):
-    """nashe"""
-    return list(a_list.copy())
+    return (a_list.copy())
