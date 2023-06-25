@@ -3,7 +3,7 @@
 
 
 class BaseGeometry:
-    """class BaseGeometry"""
+    """class BaseGeometry, commit """
     def area(self):
         """method"""
         raise Exception("area() is not implemented")
