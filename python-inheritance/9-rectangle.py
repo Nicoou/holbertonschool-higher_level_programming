@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" task 8 rectangle"""
+""" task 9 rectangle"""
 
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
@@ -14,7 +14,7 @@ class Rectangle(BaseGeometry):
         __height = height
 
         def area(self):
-            return self.width * self.height
+            return self.__width * self.__height
         
         def __str__(self) -> str:
             return f"{Rectangle} {self.__width}/{self.__height}"
