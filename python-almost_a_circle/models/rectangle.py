@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Task 2"""
-from typing import Self
 from models.base import Base
 
 
