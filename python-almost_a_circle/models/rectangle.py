@@ -63,21 +63,23 @@ class Rectangle(Base):
 
     def area(self):
         """ representation of the rectangle """
+
         return self.__height * self.__width
 
-    def dislay(self):
-        """
-        representation of the rectangle
-        """
+    def display(self):
+        """representation of the rectangle"""
 
         if self.__width != 0 and self.__height != 0:
-            for _ in range(self.__y):
-                print()
-            for _ in range(self.__height):
-                for _ in range(self.__x):
-                    print(" ", end="")
-                for _ in range(self.__width):
-                    print("#", end="")
-                print()
+            result = ""
+            if self.__y > 0:
+                for x in range(0, self.__y):
+                    result += "\n"
+            for x in range(0, self.__height):
+                for y in range(0, self.__x):
+                    result += " "
+                result += "#" * self.__width
+                if x != self.__height - 1:
+                    result += "\n"
+            print(result)
         else:
             print()
