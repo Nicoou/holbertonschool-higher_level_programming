@@ -92,7 +92,7 @@ class Rectangle(Base):
             f"{self.__width}/{self.__height}"
         )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """method used by update date of the class"""
 
         if args:
@@ -106,3 +106,21 @@ class Rectangle(Base):
                 self.__width = args[1]
             if len(args) > 0:
                 self.id = args[0]
+        else:
+            for i in kwargs:
+                if i == 'height':
+                    self.__height = kwargs[i]
+                elif i == 'width':
+                    self.__width = kwargs[i]
+                elif i == 'y':
+                    self.__y = kwargs[i]
+                elif i == 'x':
+                    self.__x = kwargs[i]
+                elif i == 'id':
+                    self.id = kwargs[i]
+
+    def to_diccionary(self):
+        """ method that return diccionary representation of Rectangle"""
+
+        return {'id': self.id, 'width': self.__width,
+                'height': self.__height, 'y': self.__y, 'x': self.__x}
