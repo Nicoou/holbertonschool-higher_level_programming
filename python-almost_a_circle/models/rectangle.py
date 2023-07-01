@@ -13,18 +13,26 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-        @property
-        def width(self):
-            return self.__width
+    @property
+    def width(self):
+        return self.__width
         
-        @property
-        def height(self):
-            return self.__height
+    @width.setter
+    def widt(self, value):
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be an integer")
+        self.__width = value
         
-        @property
-        def x(self):
+    @property
+    def height(self):
+        return self.__height
+
+    @property
+    def x(self):
             return self.__x
         
-        @property
-        def y(self):
-            return self.__y
+    @property
+    def y(self):
+        return self.__y
