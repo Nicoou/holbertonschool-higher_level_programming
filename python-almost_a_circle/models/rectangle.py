@@ -66,7 +66,10 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def dislay(self):
-        """representation of the rectangle"""
+        """
+        representation of the rectangle
+        """
+
         if self.__width != 0 and self.__height != 0:
             result = ""
             if self.__y > 0:
