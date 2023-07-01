@@ -88,6 +88,6 @@ class Rectangle(Base):
         """ This function is called when you want to print the class """
 
         return (
-            f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -"
+            f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - "
             f"{self.__width}/{self.__height}"
         )
