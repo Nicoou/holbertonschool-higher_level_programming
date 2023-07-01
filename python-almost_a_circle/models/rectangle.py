@@ -67,6 +67,12 @@ class Rectangle(Base):
 
     def dislay(self):
         """representation of the rectangle"""
-        
-        for y in range(self.__height):
-            print('#' * self.__width)
+        if self.__width != 0 and self.__height != 0:
+            result = ""
+            if self.__y > 0:
+                result += "\n" * self.__y
+            for _ in range(self.__height):
+                result += " " * self.__x + "#" * self.__width + "\n"
+            print(result)
+        else:
+            print()
