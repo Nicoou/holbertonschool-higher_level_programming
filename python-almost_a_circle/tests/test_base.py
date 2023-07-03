@@ -5,7 +5,7 @@ from models.base import Base
 
 
 class BaseClass(unittest.Testcase):
-    """ base class """
+    """ base classs """
     def test_negative_id(self):
         result = Base(-12)
         self.assertEqual(result.id, -12)
